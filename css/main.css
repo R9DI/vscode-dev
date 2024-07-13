@@ -24,13 +24,13 @@
     background-color: cadetblue;
     margin-left; 10px;
     padding: 40px;
-/*    상하좌우 다 따로 줄 수 있음*/
+    /* 상하좌우 다 따로 줄 수 있음*/
     border: 4px dotted black;
     border-radius: 30px;
     margin-left:auto;
     margin-right:auto;
     font-size:10px;
-/*    font-size 는 inherit되는 속성이기 때문. 모든 스타일이 inherit 되지는 않음*/
+    /* font-size 는 inherit되는 속성이기 때문. 모든 스타일이 inherit 되지는 않음*/
     color:white;
 }
 
@@ -50,8 +50,9 @@
     height:400px;
     background: blue;
     float:left;
-/*    float는 요소를 붕띄워서 왼쪽정렬. 빼고 만들경우 한 줄을 차지하고 그 중 왼쪽 20%를 먹음*/
-/*    display: inline-block;*/
+    /* float는 요소를 붕띄워서 왼쪽정렬. 빼고 만들경우 한 줄을 차지하고 그 중 왼쪽 20%를 먹음*/
+    /* display: inline-block;*/
+        /* 내 크기만큼 차지가헥 해주세요(워드 어울림같은 기능) 그런데 공백에 민감 */
 }
 
 .right {
@@ -59,16 +60,17 @@
     height:400px;
     background: coral;
     float: right;
-/*    display: inline-block;*/
-/*    vertical-align: top;*/
-/* Baseline 관련*/
+    /* display: inline-block;*/
+        /* 인라인블럭으로 사용할 경우 글씨쓰면 얼라인 깨짐. 불편 */
+        /* vertical-align: top;을 쓰면 해결은 가능함 */
+        /* 이런 문제는 정렬때문임. 'inline'인 이들만 vertical align함 글의 Baseline 관련*/
 }
 
 .footer {
     width:100%;
     height: 100px;
     background-color:grey;
-/*    clear:both;*/
-    float:left;
-/*    clear을 안해놓으면 left, right 박스 위에 가서 붙어있는다.*/
+   clear:both;
+    /* float:left; 로 해도 동일한 효과를 지니게 할 수 있다. */
+    /* clear을 안해놓으면 left, right 박스 위에 가서 붙어있는다.*/
 }
